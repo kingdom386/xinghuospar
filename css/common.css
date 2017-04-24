@@ -1,0 +1,62 @@
+/*
+.scroll-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.scroll-container {
+    position: absolute;
+    z-index: 1;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+*/
+/*加载更多*/
+/*.loading-more {
+	position: relative;
+    width: auto;
+    height: 0.8rem;
+    font-size: 0.24rem;
+    color: #ccc;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+.loading-more:before,.loading-more:after {
+    position: absolute;
+    top: 0.39rem;
+    display: block;
+    content: '';
+    width:1.2rem;
+    height:1px;
+    background: #ccc;
+}
+
+.loading-more:before{
+    left:20%;
+}
+
+.loading-more:after{
+    main:20%;
+}*/

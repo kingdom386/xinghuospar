@@ -1,0 +1,65 @@
+/*个人中心首页*/
+/*头部*/
+.person-head{ height: 2.8rem; padding-top: 0.33rem; text-align: center; background-image: url(../img/personHead.png); background-size: 7.5rem 2.8rem; -webkit-background-size: 7.5rem 2.8rem; background-repeat: no-repeat; position: relative;}
+.person-head .head-img{ width: 1.6rem; height: 1.6rem; display: inline-block; border-radius: 50%; -webkit-border-radius: 50%; border: 1px solid #f2f2f2; position: relative;}
+.person-head .head-img img{ width: 1.4rem; height: 1.4rem; border-radius: 50%; -webkit-border-radius: 50%; border: 3px solid #fff; position: absolute; top: 50%; left: 50%; transform: translate3d(-50%,-50%,0); -webkit-transform: translate3d(-50%,-50%,0);}
+.person-head .head-img ~ p{ padding-top: 0.24rem;}
+
+.person-list{ margin-top: 0.2rem; background-color: #fff;}
+.person-list .person-list-title{color: #333;}
+.person-list .person-list-title, .order-list .order-per-list .order-title{ position: relative; height: 0.88rem; line-height: 0.88rem; padding: 0 0.24rem; display:-webkit-box; display: -webkit-flex; display: flex; border-bottom: 1px solid #eee;}
+.order-list .order-per-list .order-title a{color:#333;}
+.person-list .person-list-title h4{ -webkit-box-flex: 1;  -webkit-flex: 1; flex: 1;}
+.person-list .person-list-title h4:before{ content: ""; width: 0.44rem; height: 0.44rem; display: inline-block; background-image: url(../img/listIcon.png); background-size: auto 0.44rem; -webkit-background-size: auto 0.44rem; background-color: #ff7700; border-radius: 0.06rem; -webkit-border-radius: 0.06rem; margin-right: 0.06rem; vertical-align: -0.12rem;}
+.person-list.card-list-container .person-list-title h4:before{ background-position: -0.44rem 0;}
+.person-list .person-list-title em{ font-size: 0.24rem; color: #999;}
+.person-list .person-list-title em:after, .order-list .order-per-list .order-title a:after{ content: ""; width: 0.14rem; height: 0.14rem; display: inline-block; border-width: 1px 1px 0 0; border-style: solid; border-color: #999; transform: rotate(45deg); -webkit-transform: rotate(45deg); margin: 0 0.04rem 0 0.06rem;}
+.course-list, .card-list a .card-line-top{ font-size: 0;}
+.course-list a{color: #333;}
+.course-list a{ width: 2.14rem; text-align: center; display: inline-block; padding: 0.26rem 0; font-size: 0.24rem;}
+.course-list a em{ width: 0.58rem; height: 0.44rem; display: block; background-image: url(../img/courseIcon.png); background-size: auto 0.44rem; -webkit-background-size: auto 0.44rem; margin: 0 auto 0.16rem; position: relative;}
+.course-list a:nth-child(2) em{ background-position: -0.58rem 0;}
+.card-list{ padding: 0.3rem 0.24rem;}
+.card-list a{ width: 100%; margin-bottom:0.3rem; position: relative; height: 2.2rem; border-radius: 0.06rem; -webkit-border-radius: 0.06rem; border: 1px solid #eee; display: block; overflow: hidden; background-color: #fff;}
+.card-list a:last-child{ margin-bottom: 0;}
+.card-list a:before{ content: ""; width: 0.17rem; height: 2.2rem; z-index: 10; background-image: url(../img/cardBorder.png); background-size: auto 2.2rem; -webkit-background-size: auto 2.2rem; display: block; position: absolute; top: 0; left: 0;}
+.card-list a .card-line-top{ height: 1.3rem; margin: 0.2rem 0;}
+.card-list a .card-line-top > h4{ font-size: 0.72rem;font-weight:400; color: #FF7700; line-height: 1.3rem; height: 1.3rem; width: 34%; border-right: 1px dashed #ccc; text-align: center; display: inline-block;}
+.card-list a .card-line-top > h4:before{ content: "¥"; font-size: 0.48rem;}
+.card-list a .card-line-top .card-line-info{ width: 66%; display: inline-block; vertical-align: top; padding: 0 0.3rem; height: 1.3rem; }
+.card-list a .card-line-top .card-line-info h5{ font-size: 0.32rem; padding: 0.1rem 0 0.2rem;color:#333;}
+.card-list a .card-line-top .card-line-info > p, .card-list a .card-line-bottom{ font-size: 0.24rem; color: #999; line-height: 1.2;}
+.card-list a .card-line-bottom{ height: 0.5rem; line-height: 0.5rem; padding-left: 0.44rem; position: absolute; bottom: 0; left: 0; right:0; background-color: #f8f8f8;}
+.card-list a.overdue:before, .card-list a.used:before{ background-position: -0.19rem 0;}
+.card-list a.overdue .card-line-top > h4, .card-list a.used .card-line-top > h4{ color: #999;}
+.card-list a.overdue:after, .card-list a.used:after{ content: ""; width: 1.3rem; height: 1.3rem; background-image: url(../img/cardStatus.png); background-repeat: no-repeat; background-size: auto 1.3rem; -webkit-background-size: auto 1.3rem; display: block; position: absolute; bottom: 0.2rem; right: 0.2rem;}
+.card-list a.overdue:after{ background-position: -1.3rem 0;}
+/*我的卡券*/
+.nav-tab{position: fixed; top: 0; left: 0; right: 0; background-color: #fff; z-index: 11; font-size: 0;}
+.nav-tab a{ position: relative; width: 25%; font-size: 0.3rem; display: inline-block; height: 0.98rem; line-height: 0.98rem; text-align: center;color:#333;}
+.nav-tab a.active, .order-list .order-per-list .order-title .order-status{ color: #FF7700;}
+.nav-tab .nav-tab-border{ position: absolute; border: 1px solid #FF7700; bottom: 0; left: 0; width: 25%; transition: all 0.3s ease;}
+/*我的课程*/
+.nav-tab.order-tab a, .nav-tab.order-tab .nav-tab-border{ width: 33.3%;}
+nav ~ section .order-list{ padding: 0.2rem 0 0 0;}
+.order-list .order-per-list{ background-color: #fff; margin-bottom: 0.2rem;}
+.order-list .order-per-list .order-title a:before{ content: ""; width: 0.32rem; height: 0.3rem; display: inline-block; background-image: url(../img/courseListIcon.png); background-size: 0.32rem 0.3rem; -webkit-background-size: 0.32rem 0.3rem; vertical-align: -0.04rem; margin-right: 0.08rem;}
+.order-list .order-per-list .order-title a:after{ vertical-align: 0.04rem;}
+.order-list .order-per-list .order-title .order-status{ position: absolute; right: 0.24rem;}
+.order-list .order-per-item{ padding: 0 0.24rem; display: block; position: relative; border-bottom: 1px solid #eee;}
+.order-list .order-per-item .item-img{ width: 1.68rem; height: 1.68rem; box-sizing: content-box; -webkit-box-sizing: content-box; padding: 0.24rem 0; text-align: center; display: table-cell; vertical-align: middle;}
+.order-list .order-per-item .item-img img{ width: 100%; display: inline-block;}
+.order-list .order-per-item .item-info{ font-size:0.26rem; position: absolute; left: 2.16rem; right: 0.24rem; top: 50%; transform: translate3d(0,-50%,0); -webkit-transform: translate3d(0,-50%,0);}
+.order-list .order-per-item .item-info > h4{ overflow: hidden; text-overflow: ellipsis; display: -webkit-box;-webkit-line-clamp: 2; -webkit-box-orient: vertical; line-height: 1.2;font-weight: 500; color:#333;}
+.order-list .order-per-item .item-info > h4 ~ .item-grey{ color: #999; font-size: 0.24rem; padding: 0.16rem 0;}
+.order-list .order-per-item .item-info .item-price span.price-all{ color: #333;}
+.order-list .order-per-item .item-info .item-price span.price-all:before{ content: "¥";}
+.order-list .order-per-item .item-info .item-price span.price-prepay:before{ content: "预付订金 ¥";}
+.order-list .order-per-item .item-info .item-price span.price-prepay{ padding-left: 0.2rem; color: #FF7700; font-size: 0.24rem;}
+.order-list .item-result{ background-color: #FFFFFF; overflow: hidden; padding: 0.14rem 0.24rem; border-bottom: 1px solid #eee;}
+.order-list .item-result a{color:#333;}
+.order-list .item-result.item-handle a{ float: right; width: 1.6rem; height: 0.58rem; display: block; border-radius: 0.06rem; -webkit-border-radius: 0.06rem; border: 1px solid #999; text-align: center; line-height: 0.58rem; margin-left:0.2rem;}
+.order-list .item-result.item-handle a.item-handle-grey{ border-color: #ccc;}
+.order-list .item-result.item-handle a.item-handle-orange{ border-color: #FF7700; color: #FF7700;}
+.order-list .item-result.item-time{ color: #999; text-align: right; padding: 0.26rem 0.24rem;}
+.tab-list~.loading-more{ margin-top: -0.2rem;}

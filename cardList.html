@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="星火教育个人中心"/>
+    <meta name="keywords" content="星火教育"/>
+    <meta content="width=device-width,initial-scale=1.0, user-scalable=0" name="viewport"/>
+    <meta name="x5-orientation" content="portrait">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/public.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/person.css" type="text/css" media="screen"/>
+    <title>我的卡券</title>
+</head>
+<body onload="load()">
+<nav class="nav-tab">
+    <a href=" " class="active">全部</a>
+    <a href=" ">未使用</a>
+    <a href=" ">已使用</a>
+    <a href=" ">已过期</a>
+    <b class="nav-tab-border"></b>
+</nav>
+<section>
+    <div id="scroll-wrapper" class="hasHeaderNav">
+        <div id="scroll-container">
+            <!--全部-->
+            <div class="card-list tab-list">
+                <a href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+                <!--过期，加overdue-->
+                <a href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+                <!--过期，加overdue-->
+                <a href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+                <!--过期，加overdue-->
+                <a href=" " class="overdue">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+                <!--已使用，加used-->
+                <a href=" " class="used">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+            </div>
+            <!--未使用-->
+            <div class="card-list tab-list" style="display: none;">
+                <a href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+                <a href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+                <a href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+                <a href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+            </div>
+            <!--已使用-->
+            <div class="card-list tab-list" style="display: none;">
+                <a class="used" href=" ">
+                    <div class="card-line-top">
+                        <h4>60</h4>
+                        <div class="card-line-info">
+                            <h5>爱奇艺60元VIP大礼包</h5>
+                            <p>购买黄金套餐季卡及以上，且订单金额≥58时使用</p>
+                        </div>
+                    </div>
+                    <div class="card-line-bottom">有效期：<em>2017.02.28</em> - <em>2017.03.28</em></div>
+                </a>
+            </div>
+            <!--已过期-->
+            <div class="card-list tab-list" style="display: none;">
+                <!--没有内容显示-->
+                <div class="empty-content">没有相关卡券哦</div>
+                <!--empty-content-->
+            </div>
+            <!--没有更多-->
+            <div id="loading-more" >正在努力加载中</div>
+            <!--loading-more-->
+        </div>
+    </div>
+</section>
+</body>
+</html>
+<script type="text/javascript" src="js/size.js"></script>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/TouchScroll.js"></script>
+<!--<script type="text/javascript" src="js/person.js"></script>-->
+<script type="text/javascript">
+    var Myscroll = '';
+    function load() {
+        Myscroll = new IScroll('#scroll-wrapper', {
+            click: true,
+            touchend: true,
+            preventDefaultException: {tagName: /^(INPUT|BUTTON|A|SPAN)$/},
+            bindToWrapper: true,
+            scrollbars: true,
+            fadeScrollbars: true,
+            shrinkScrollbars: 'clip'
+        });
+
+        Myscroll.on('scrollEnd', function () {
+            var maxScroll = Myscroll.maxScrollY + 80,
+                    curScrollDirection = Myscroll.directionY,
+                    y = Myscroll.y;
+            if (y <= maxScroll && curScrollDirection == 1) {
+                $("#loading-more").show();
+                switch ($(".nav-tab a.active").index()) {
+                    case 0:
+                        //全部列表加载
+
+                        break;
+                    case 1:
+                        //未使用列表加载
+
+                        break;
+                    case 2:
+                        //已使用列表加载
+
+                        break;
+                    case 3:
+                        //已过期列表加载
+
+                        break;
+                }
+
+            } else if (y >= maxScroll) {
+                //没有满足加载事件
+            } else {
+                //加载完毕 或是
+                //$("#loading-more").html("暂无更多");
+            }
+            this.refresh();
+        });
+    }
+
+    //点击导航切换
+    $(".nav-tab").on("touchend", "a", function () {
+        $(this).addClass("active").siblings("a").removeClass("active");
+        var aLength = $(this).parent().find("a").length;
+        var perWidth = $(window).width() / aLength;
+        $(".nav-tab-border").css("left", $(this).index() * perWidth);
+        $(".tab-list").eq($(this).index()).show().siblings(".tab-list").hide();
+        Myscroll.refresh();
+        Myscroll.scrollTo(0, 0);
+    })
+</script>
